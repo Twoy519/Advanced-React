@@ -45,7 +45,9 @@ const NavStyles = styled.ul`
       left: 50%;
       margin-top: 2rem;
     }
-    &:hover,
+    &: hover {
+      text-decoration: ${props => props.theme.red} underline;
+    }
     &:focus {
       outline: none;
       &:after {
