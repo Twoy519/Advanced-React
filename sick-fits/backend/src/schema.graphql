@@ -18,4 +18,5 @@ type Query {
   items: [Item]!
   # You can search for methods in `prisma.graphql::Query`
   item(where: ItemWhereUniqueInput!): Item
+  itemsConnection(where: ItemWhereInput): ItemConnection!
 }
